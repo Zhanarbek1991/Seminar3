@@ -1,23 +1,14 @@
 from linked_class import ArrayStack
 
-class Stack:
-    def __init__(self):
-        self._theItems = list()
+stak = ArrayStack()
 
-    def isEmpty(self):
-        return len(self) == 0
+stak.push(4)
+stak.push(5)
+stak.push(6)
+stak.is_empty()
 
-    def __len__(self):
-        return len(self._theItems)
+stak.pop()
 
-    def peek(self):
-        assert not self.isEmpty(), "Cannot peek at an empty stack"
-        return self._Items[-1]
 
-    def pop(self):
-        assert not self.isEmpty(), "Cannot peek at an empty stack"
-        return self._theItems.pop()
-
-    def push(self,item):
-        self._theItems.append(item)
+print(stak.pr())
     
